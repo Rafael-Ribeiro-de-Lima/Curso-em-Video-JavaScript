@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        font{
+        body{
             font: normal 20px Arial;
         }
     </style>
@@ -16,8 +16,9 @@
     <script>
         var nome = window.prompt('Qual é o seu nome?')
         document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras <br>`)
-        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}`)
-        //n1.toFixed(3).replace('.' , ',') 
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}`)
+        //n1.toFixed(3).replace('.' , ',') --> to fixed é o número de casas
         //n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     </script>
 </body>

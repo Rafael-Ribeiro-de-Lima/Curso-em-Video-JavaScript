@@ -19,13 +19,13 @@
     <h1>Olá, Mundo!</h1> <!-- Comentário HTML-->
 
     <script>
-        var n1 = Number.parseFloat(window.prompt('Digite um número:')) // prompt é string, o Numer.parseFloat converte em número
-        var n2 = Number(window.prompt('Digite outro número:')) // Number substitui o Number.parseInt e Number.parseFloat
-        var s = n1 + n2
-        String(s) // ou s.toString()
-        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+        var n1 = prompt('Digite um número:') // Number converte string em numero
+        var n2 = prompt('Digite outro número:') // Number substitui o Number.parseInt e Number.parseFloat
+        var s = Number(n1) + Number(n2)
+        //String(s) ou s.toString()
+        window.alert(`A soma entre ${n1} e ${n2} é ${String(s)}`)
 
-        // `O aluno ${nome} de ${idade} anos tirou a nota ${nota}`
+        // `O aluno ${nome} de ${idade} anos tirou a nota ${nota}`  --> utiliza-se CRASE
 
         /*
         s.length
