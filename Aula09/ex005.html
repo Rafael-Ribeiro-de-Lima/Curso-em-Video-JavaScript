@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(121, 170, 206);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id='msg' >Clique em mim</div>
+    <br>
+    <script>
+        var corpo = window.document.body
+        corpo.style.backgroundColor = 'grey'
+
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        //índice 0 = primeiro parágrafo
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'red'
+        document.write('<br> <br>')
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        document.write('É possível copiar formatado também: ' + p2.innerHTML)
+
+        // window.alert(p2.innerText)
+
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+        d.innerText = 'Modifiquei esse texto usando JavaScript!'
+        
+        var d = window.document.querySelector('div#msg') 
+        d.style.color = 'purple'
+        // querySelector é mais recomendável e mais recente
+
+
+
+        /* DOM = Document Object Model
+        window.document.write('Olá, Mundo <br>')
+        window.document.write(window.document.charset)
+        window.document.write('<br>')
+        window.document.write(window.navigator.appName)
+        window.document.write('<br>')
+        window.document.write(window.document.URL) */
+    </script>
+</body>
+</html>
