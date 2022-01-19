@@ -20,6 +20,18 @@ section{
     max-width: 600px;
 }
 
+div{
+    text-align: center;
+}
+
+select{
+    text-align: center;
+}
+
+select{
+    width: 200px;
+}
+
 footer{
     color: white;
     font-style: italic;
